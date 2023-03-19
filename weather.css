@@ -1,0 +1,18 @@
+.weather_city {
+  text-align: end;
+  margin-top: 20px;
+  margin-right: 80px;
+}
+.weather_state {
+  text-align: end;
+  margin-right: 30px;
+}
+.weather_block {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+.weather_c {
+  font-size: 50px;
+  margin-top: 18px;
+}/*# sourceMappingURL=weather.css.map */

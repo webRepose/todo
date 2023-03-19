@@ -1,0 +1,25 @@
+.weather {
+
+    &_city {
+        text-align: end;
+        margin-top: 20px;
+        margin-right: 80px;
+    }
+
+    &_state {
+        text-align: end;
+        margin-right: 30px;
+    }
+
+
+    &_block {
+        display: flex;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+
+    &_c {
+        font-size: 50px;
+        margin-top: 18px;
+    }
+}
