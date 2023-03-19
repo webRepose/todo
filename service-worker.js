@@ -1,14 +1,7 @@
-if('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js')
-      .then(reg => console.log('nice ' + reg.scope))
-    })
-}
-
 const CACHE_NAME = 'v1';
 const urlToCache = [
-    'index.html',
-    'offline.html',
+    '/todo/index.html',
+    '/todo/offline.html',
 ];
 
 // install
@@ -17,7 +10,7 @@ self.addEventListener('install', (event)=>{
         caches.open(CACHE_NAME)
         .then((cache)=>{
             console.log('cache open');
-            return cache.addAll(urlToCache)
+            return cache.addAll(urlToCache);
         })
     )
 })
